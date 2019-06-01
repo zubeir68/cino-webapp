@@ -1788,7 +1788,11 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 .footer-area .footer-social li .google-plus:hover {
-  background: #d34836;
+  background: #d62976;
+}
+
+.footer-area .footer-social li .youtube:hover {
+  background: #ff0000;
 }
 
 .footer-area .footer-text p {
