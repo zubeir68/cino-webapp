@@ -22,11 +22,20 @@
        ========================================================================== */
      jQuery('#clock').countdown('2019/07/06',function(event){
       var $this=jQuery(this).html(event.strftime(''
-      +'<div class="time-entry days"><span>%-D</span> Days</div> '
-      +'<div class="time-entry hours"><span>%H</span> Hours</div> '
-      +'<div class="time-entry minutes"><span>%M</span> Minutes</div> '
-      +'<div class="time-entry seconds"><span>%S</span> Seconds</div> '));
+      +'<div class="time-entry days"><span>%-D</span> Tage</div> '
+      +'<div class="time-entry hours"><span>%H</span> Stunden</div> '
+      +'<div class="time-entry minutes"><span>%M</span> Minuten</div> '
+      +'<div class="time-entry seconds"><span>%S</span> Sekunden</div> '));
     });
+
+    jQuery('#clock2').countdown('2019/06/05',function(event){
+      var $this=jQuery(this).html(event.strftime(''
+      +'<div class="time-entry days"><span>%-D</span> Tage</div> '
+      +'<div class="time-entry hours"><span>%H</span> Stunden</div> '
+      +'<div class="time-entry minutes"><span>%M</span> Minuten</div> '
+      +'<div class="time-entry seconds"><span>%S</span> Sekunden</div> '));
+    });
+
 
     /* slicknav mobile menu active  */
     $('.mobile-menu').slicknav({
