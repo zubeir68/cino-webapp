@@ -28,7 +28,15 @@
       +'<div class="time-entry seconds"><span>%S</span> Sekunden</div> '));
     });
 
-    jQuery('#clock2').countdown('2019/06/05',function(event){
+    jQuery('#clock2').countdown('2019/06/06',function(event){
+      var $this=jQuery(this).html(event.strftime(''
+      +'<div class="time-entry days"><span>%-D</span> Tage</div> '
+      +'<div class="time-entry hours"><span>%H</span> Stunden</div> '
+      +'<div class="time-entry minutes"><span>%M</span> Minuten</div> '
+      +'<div class="time-entry seconds"><span>%S</span> Sekunden</div> '));
+    });
+
+    jQuery('#clock3').countdown('2019/06/20',function(event){
       var $this=jQuery(this).html(event.strftime(''
       +'<div class="time-entry days"><span>%-D</span> Tage</div> '
       +'<div class="time-entry hours"><span>%H</span> Stunden</div> '

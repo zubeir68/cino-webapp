@@ -2219,3 +2219,8 @@ a.back-to-top:hover, a.back-to-top:focus {
   color: #fff;
   border-color: #fff;
 }
+
+mark {
+  background-color: #29335C;
+  color: white;
+}
