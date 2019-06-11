@@ -10,7 +10,13 @@
       gtag('config', 'UA-141186220-1');
     </script>
 
-    <!-- EVENTBRITE WIDGET -->
+    <!-- EVENTBRITE --- -->
+    <!-- Noscript content for added SEO -->
+    <noscript><a href="https://cinoversity.eventbrite.de" rel="noopener noreferrer" target="_blank"></noscript>
+    <!-- You can customize this button any way you like -->
+   
+    <noscript></a>Buy Tickets on Eventbrite</noscript>
+    
     <script src="https://www.eventbrite.de/static/widgets/eb_widgets.js"></script>
     
     <script type="text/javascript">
@@ -19,16 +25,14 @@
         };
     
         window.EBWidgets.createWidget({
-            // Required
             widgetType: 'checkout',
             eventId: '62616021205',
-            iframeContainerId: 'eventbrite-widget-container-62616021205',
-    
-            // Optional
-            iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
-            onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+            modal: true,
+            modalTriggerElementId: 'eventbrite-widget-modal-trigger-62616021205',
+            onOrderComplete: exampleCallback
         });
     </script>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -592,7 +596,7 @@
             <div class="row time-countdown justify-content-center wow fadeInUp" data-wow-delay="0.2s">
               <div id="clock" class="time-count"></div>
             </div>
-            <div id="eventbrite-widget-container-62616021205"></div>
+            <button id="eventbrite-widget-modal-trigger-62616021205" type="button">Buy Tickets</button>
           </div>
         </div>
       </div>
