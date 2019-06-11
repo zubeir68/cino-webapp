@@ -9,6 +9,26 @@
       gtag('js', new Date());
       gtag('config', 'UA-141186220-1');
     </script>
+
+    <!-- EVENTBRITE WIDGET -->
+    <script src="https://www.eventbrite.de/static/widgets/eb_widgets.js"></script>
+    
+    <script type="text/javascript">
+        var exampleCallback = function() {
+            console.log('Order complete!');
+        };
+    
+        window.EBWidgets.createWidget({
+            // Required
+            widgetType: 'checkout',
+            eventId: '62616021205',
+            iframeContainerId: 'eventbrite-widget-container-62616021205',
+    
+            // Optional
+            iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+            onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+        });
+    </script>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -572,7 +592,7 @@
             <div class="row time-countdown justify-content-center wow fadeInUp" data-wow-delay="0.2s">
               <div id="clock" class="time-count"></div>
             </div>
-            <a href="#pricing" class="btn btn-common wow fadeInUp" data-wow-delay="0.3s">Tickets sichern</a>
+            <div id="eventbrite-widget-container-62616021205"></div>
           </div>
         </div>
       </div>
