@@ -225,6 +225,9 @@ ul li, ol li {
   background-color: #f05537;
   position: relative;
   z-index: 1;
+  font-size: 14px;
+  color: white;
+  border: 2px solid #f05537;
 }
 
 .btn-common:hover {
