@@ -29,46 +29,6 @@
       <meta property="twitter:title" content="CINOVERSITY & CINO- Offizielle Website">
       <meta property="twitter:description" content="Networking Event - Self-Improvement Seminar - Mastermind Session. Die Cinoversity wird das Publikum inspirieren damit jeder das absolut beste f&uumlr seine Person zieht und sein wahres Potential und Selbstwert zu 100% erkennen wird">
       <meta property="twitter:image" content="https://imgur.com/SwWYfPW.png">
-
-    
-
-    <!-- Facebook Pixel Code -->
-    
-    <script>
-    
-      !function(f,b,e,v,n,t,s)
-      
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      
-      s.parentNode.insertBefore(t,s)}(window,document,'script',
-      
-      'https://connect.facebook.net/en_US/fbevents.js');
-      
-      fbq('init', '396820244510837'); 
-      
-      fbq('track', 'PageView');
-      
-      </script>
-      
-      <noscript>
-      
-      <img height="1" width="1" 
-      
-      src="https://www.facebook.com/tr?id=396820244510837&ev=PageView
-      
-      &noscript=1"/>
-      
-      </noscript>
-      
-      <!-- End Facebook Pixel Code -->
   
   
 
@@ -113,6 +73,15 @@
 
   </head>
   <body>
+
+    <script>
+      fetch("https://api-stayontrack.firebaseapp.com/api/ping").then(res => {
+        return res.json
+      }).then(data => {
+        console.log(data);
+      })
+    </script>
+
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQCQ7KK"
       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
